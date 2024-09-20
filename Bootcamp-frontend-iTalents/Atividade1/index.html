@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="buttons">
+            <button onclick="calculator.addToResult('1')">1</button>
+            <button onclick="calculator.addToResult('2')">2</button>
+            <button onclick="calculator.addToResult('3')">3</button>
+            <button onclick="calculator.addToResult('4')">4</button>
+            <button onclick="calculator.addToResult('5')">5</button>
+            <button onclick="calculator.addToResult('6')">6</button>
+            <button onclick="calculator.addToResult('7')">7</button>
+            <button onclick="calculator.addToResult('8')">8</button>
+            <button onclick="calculator.addToResult('9')">9</button>
+            <button onclick="calculator.addToResult('0')">0</button>
+            <button onclick="calculator.setOperation('+')">+</button>
+            <button onclick="calculator.setOperation('-')">-</button>
+            <button onclick="calculator.setOperation('*')">*</button>
+            <button onclick="calculator.setOperation('/')">/</button>
+            <button onclick="calculator.clear()">C</button>
+            <button onclick="calculator.deleteLast()">←</button>
+            <button onclick="calculator.calculateResult()">=</button>
+        </div>
+        <div id="history"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
